@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgroung2"
+    android:layout_height="match_parent"
+    tools:context=".secondQuiz">
+
+   <TextView
+    android:id="@+id/tvheading"
+    android:layout_width="283dp"
+    android:layout_height="61dp"
+    android:background="#EE426CEA"
+    android:fontFamily="cursive"
+    android:gravity="center_horizontal"
+    android:text="Basic Questions."
+    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+    android:textColor="@color/black"
+
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/tvsecond"
+        android:layout_width="341dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="92dp"
+        android:text="Qn.2.Which country does this  flag belong?."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.728"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvheading" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="266dp"
+        android:layout_height="216dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvsecond"
+        app:layout_constraintVertical_bias="0.097"
+        app:srcCompat="@drawable/southafrica" />
+
+ <Button
+     android:id="@+id/btn11"
+     android:layout_width="136dp"
+     android:layout_height="59dp"
+     android:text="SouthAfrica"
+     app:layout_constraintBottom_toTopOf="@+id/btn44"
+     app:layout_constraintEnd_toStartOf="@+id/btn22"
+     app:layout_constraintHorizontal_bias="0.55"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/imageView7"
+     app:layout_constraintVertical_bias="0.695" />
+
+ <Button
+     android:id="@+id/btn22"
+     android:layout_width="131dp"
+     android:layout_height="61dp"
+     android:layout_marginTop="32dp"
+     android:text="Algeria"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.771"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+ <Button
+     android:id="@+id/btn44"
+     android:layout_width="138dp"
+     android:layout_height="60dp"
+     android:layout_marginStart="44dp"
+     android:layout_marginBottom="48dp"
+     android:text="America"
+     app:layout_constraintBottom_toTopOf="@+id/btnnext3"
+     app:layout_constraintStart_toStartOf="parent" />
+
+ <Button
+     android:id="@+id/btn33"
+     android:layout_width="130dp"
+     android:layout_height="63dp"
+     android:text="Nigeria"
+     app:layout_constraintBottom_toTopOf="@+id/btnnext3"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.346"
+     app:layout_constraintStart_toEndOf="@+id/btn44"
+     app:layout_constraintTop_toBottomOf="@+id/btn22"
+     app:layout_constraintVertical_bias="0.367" />
+
+ <Button
+        android:id="@+id/btnnext3"
+        android:layout_width="172dp"
+        android:layout_height="72dp"
+        android:text="View The Next Page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.873" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
